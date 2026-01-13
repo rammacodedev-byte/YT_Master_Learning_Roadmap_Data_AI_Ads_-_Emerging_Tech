@@ -1,0 +1,12 @@
+⭐ Parameters: How to Store Data
+
+🔹 Data is commonly stored using **spreadsheets**.
+🔹 A spreadsheet is organized into:
+   - **Rows** → Horizontal data (records)
+   - **Columns** → Vertical data (attributes/features)
+
+🔹 **Cell**
+   - A cell is the intersection of a row and a column.
+   - Example: A1, B2, C5
+
+--------------------------------------------------

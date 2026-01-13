@@ -1,0 +1,9 @@
+⭐ Importance of Context
+
+🔹 Data has no meaning without context.
+🔹 Example: What does **40** mean?
+   - 🌡️ Temperature (40°C)
+   - 🎂 Age (40 years)
+   - 🏠 House number (House No. 40)
+   - 📊 Score or quantity
+🔹 Without context, a value cannot be properly understood.

@@ -1,0 +1,76 @@
+⭐ Units of Memory (Simple & Clear)
+
+🔸 Bit & Byte
+- Bit: Smallest unit of data
+- Bit values: 0 or 1 (binary form)
+- Byte: 8 bits
+- Binary system uses only 0 and 1
+
+🔸 Data Units (Small → Large)
+- Bit (b) → 0 or 1
+- Byte (B) → 8 bits
+- Kilobit (Kb) → 1,000 bits
+- Kilobyte (KB) → 1,024 bytes
+- Megabit (Mb) → 1,000,000 bits
+- Megabyte (MB) → 1,024 KB
+- Gigabit (Gb) → 1,000 Mb
+- Gigabyte (GB) → 1,024 MB
+- Terabit (Tb) → 1,000 Gb
+- Terabyte (TB) → 1,024 GB
+
+🔸 Simple Understanding (One Level Up Strategy)
+- Bits combine to make Bytes
+- Bytes combine to make KB
+- KB combine to make MB
+- MB combine to make GB
+- GB combine to make TB
+
+Example:
+"One packet collects data, and many packets create higher-level storage"
+
+🔸 Data Measurement Chart (Text Format)
+
+Bit (b)
+ ↓
+Byte (B) = 8 bits
+ ↓
+Kilobyte (KB) = 1,024 bytes
+ ↓
+Megabyte (MB) = 1,024 KB
+ ↓
+Gigabyte (GB) = 1,024 MB
+ ↓
+Terabyte (TB) = 1,024 GB
+
+🔸 Way to Store Data
+1️⃣ Non-Digital Storage
+- Paper records
+- Books
+- Files & registers
+- Charts & manuals
+
+2️⃣ Digital Storage
+- Electronic form (0 & 1)
+- Easy to store, share, and analyze
+
+🔸 Digital Data Storage Devices
+
+📍 Local Storage
+- Hard Disk (HDD)
+- Solid State Drive (SSD)
+- USB Flash Drive
+- Memory Card
+- External Hard Drive
+
+📍 Cloud Storage
+- Google Drive
+- OneDrive
+- Dropbox
+- AWS Cloud
+- iCloud
+
+🔸 Simple Summary
+Data is stored in binary form (0 & 1). Small units combine to form larger units. Data can be stored digitally or non-digitally, locally or on the cloud.
+
+🌟 Key Line:
+"Small Bits Build Big Data"

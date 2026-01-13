@@ -1,0 +1,40 @@
+⭐ DIKW Pyramid (Simple & Clear)
+
+🔸 Stand for:  
+DIKW → Data, Information, Knowledge, Wisdom  
+It is a model showing how raw data is transformed into valuable wisdom for decision-making.
+
+🔸 What is Data?  
+- Raw facts or figures without context  
+- Example: 25, 30, 18, 42 (numbers only)  
+- Characteristics: unorganized, unprocessed, needs context  
+- Base of the DIKW pyramid  
+
+🔸 What is Information?  
+- Data that is processed and organized to give meaning  
+- Example: "The average temperature this week is 28°C"  
+- Characteristics: structured, meaningful, helps answer “who”, “what”, “when”  
+
+🔸 What is Knowledge?  
+- Information combined with experience, context, and understanding  
+- Example: "High temperatures during summer increase electricity usage"  
+- Characteristics: actionable, applied, helps answer “how”  
+
+🔸 What is Wisdom(Decisions)?  
+- Using knowledge for sound judgment and decision-making  
+- Example: "To reduce electricity overload in summer, plan load distribution and encourage energy-saving practices"  
+- Characteristics: insight, foresight, helps answer “why”  
+
+🔸 Recommended Resources to Check  
+1️⃣ Book: *Knowledge Management in Theory and Practice* by Kimiz Dalkir  
+2️⃣ Online Article: https://www.tutorialspoint.com/dikw-pyramid  
+3️⃣ Video Explanation: YouTube → “DIKW Pyramid Explained”  
+4️⃣ Research Paper: *Data, Information, Knowledge, and Wisdom (DIKW) Model* – accessible via Google Scholar  
+
+🔸 Simple Summary  
+DIKW Pyramid shows progression:  
+**Data → Information → Knowledge → Wisdom**  
+“Raw numbers become meaningful insights and finally guide smart decisions.”  
+
+🌟 Key Line:  
+"Data informs, Knowledge guides, Wisdom decides."

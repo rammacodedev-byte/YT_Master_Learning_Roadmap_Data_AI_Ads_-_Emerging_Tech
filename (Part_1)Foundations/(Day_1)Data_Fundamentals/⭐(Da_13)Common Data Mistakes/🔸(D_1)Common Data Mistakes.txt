@@ -1,0 +1,36 @@
+⭐ (D_1) Common Data Mistakes (Simple & Practical)
+
+🔸 Main Parameters / Common Data Mistakes:
+
+1️⃣ **Inaccurate Data**
+- Wrong values entered
+- Human errors during data entry
+- Example: Incorrect age, price, or date
+
+2️⃣ **Missing / Incomplete Data**
+- Blank or null values
+- Skipped fields in forms
+- Example: Missing customer email or address
+
+3️⃣ **Duplicate Data**
+- Same record stored multiple times
+- No unique ID used
+- Example: Same customer entered twice
+
+4️⃣ **Inconsistent Data**
+- Different values for the same data in different systems
+- Example: "NY" vs "New York" vs "N.Y."
+
+5️⃣ **Outdated Data**
+- Old data not updated on time
+- Example: Old phone number or expired product price
+
+6️⃣ **Invalid Data (Rule Violation)**
+- Data not following format or business rules
+- Example: Email without “@”, negative age
+
+🔸 Simple Summary  
+Common data mistakes reduce data quality, lead to wrong analysis, and cause poor decisions. Identifying and fixing these mistakes improves accuracy and trust in data.
+
+🌟 Key Line:  
+"Avoid Common Data Mistakes → Improve Data Quality → Better Decisions"

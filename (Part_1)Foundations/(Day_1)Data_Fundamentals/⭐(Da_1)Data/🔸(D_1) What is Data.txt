@@ -1,0 +1,61 @@
+⭐ What is Data?
+
+🔹 The word **Data** comes from the Latin word **"Datum"**, which means **Facts**.
+🔹 Data can exist in many forms, such as:
+   - Text 📝
+   - Numbers 🔢
+   - Audio 🔊
+   - Video 🎥
+   - Images 🖼️
+   - And much more...
+
+--------------------------------------------------
+
+⭐ Data Around Us
+
+🔹 Every day, we are connected to data—even if we don’t realize it.
+🔹 Examples of data in our daily life:
+   - Personal information: name, age, height, weight, gender
+   - Social media activity: comments, posts, photos, videos
+   - House details: size, number of rooms, kitchen, bathrooms, color
+   - Shopping habits: your favorite grocery store and items
+
+🔹 **Whatever you think, wherever you go—you will find data around you.**
+🔹 We live in the **Age of Data**, and **data is everywhere** 🌍
+
+--------------------------------------------------
+
+⭐ World’s Most Valuable Data Sources
+
+🔹 Tech companies: Google, Facebook (Meta)
+🔹 Resources & usage data:
+   - Oil
+   - Gas
+   - Electricity
+🔹 User behavior data:
+   - Readers
+   - Viewers
+   - Watchers
+
+--------------------------------------------------
+
+⭐ Types of Data
+
+🔹 **Quantitative Data** (Countable & Measurable)
+   - Numerical form
+   - Examples: age, height, marks, salary
+
+🔹 **Qualitative Data** (Not Countable, Categorical)
+   - Descriptive in nature
+   - Examples: language, holidays, levels, colors
+
+🔹 **Structured Data**
+   - Predefined format and schema
+   - Organized in rows and columns
+   - Easy to understand and analyze
+   - Example: MS Excel, databases
+
+🔹 **Unstructured Data**
+   - No predefined structure
+   - Difficult to analyze directly
+   - Examples: text, images, audio, videos
