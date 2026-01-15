@@ -1,0 +1,141 @@
+⭐ What is Data Analysis? 
+
+🔸 Purpose:  
+
+🔸 Related Topics & Some Examples (past data check and future prediction + imagination future features): 
+🔸 Predict customer behavior 
+🔸 Create homogeneous cluster (classification & regression) 
+🔸 Graphs and visualization 
+
+🔸 All centuries Data Analysis (all field analysis important) requirements & Data Scientist link: 
+
+🔸 Why Data Analysis important (business growth: past and future + example of business how to work for growth): 
+
+⭐ Check customer requirements + timing + interest check + check budgets + 360-degree viewing + check customer satisfaction level + feedbacks + bad feedbacks customer gift provide strategies 
+
+⭐ Management Perspective (data check + customer understanding + present time trends check + growth check income + extract relevant information + help of dashboard) 
+
+⭐ Limitation of Analyst (need for machine learning tools + examples of why analyst is limited + reasons for machine learning next step) 
+
+⭐ Data Analysis Tools
+(help analysis understand data: R, SQL, Python, SAS, Power BI, Spark, K9, Excel, Splunk, OpenRefine, Jenkins)
+- Different companies use different methods and tools
+- Categories: Important, 50% Important, Optional 
+
+⭐ Types of Data Analysis - Data Prospect
+- Qualitative (cannot be measured data) 
+- Quantitative (can be measured data, text-based) 
+
+⭐ Types Of Analysis Techniques
+- Statistical
+  - Descriptive (already happened)
+  - Inferential (different sample collection for prediction)
+  - Exploratory (find connections + hypotheses)
+  - Diagnostic (focus on "why", prediction analysis)
+  - Perspective Analysis
+  - Recommender Analysis (suggestions for future problems)
+  - Text Analysis 
+
+⭐ Statistical Analysis
+- Dashboard creation, graphs, models of data, customer data analysis
+- Descriptive: summarize all data (numerical & categorical, full population)
+- Inferential: sample data (e.g., 30% of population)
+- Exploratory: store relationships/connections 
+
+⭐ Diagnostic Analysis
+- Graphs check reason for growth/loss
+- Why did it happen? Identify issues
+- Solve problems using past data 
+
+⭐ Predictive Analysis
+- Predict what is likely to happen
+- Check budgets and reasons for buying (season, salary, etc.)
+- Use past data, diagnostic and descriptive results
+- ML/AI for future trends & problem prediction
+- Forecasting examples: temperature, rainfall, population
+- Accuracy depends on data 
+
+⭐ Prescriptive Analysis
+- Combine prediction data & decide actions
+- Key areas: marketing, sales, customer experience, HR, finance, logistics 
+
+⭐ Text Analysis
+- Document comparison, check duplications, feedbacks
+- Text mining for large data
+- Sentiment analysis, topic identification, mood/tree analysis, toxic words
+- Word-based analysis (Twitter, Facebook, Instagram)
+- Survey responses, pain points, communication setup 
+
+⭐ Techniques & Methods
+1. Cluster Analysis (patterns, growth)
+2. Cohort Analysis (behavior of customer groups)
+3. Regression Analysis (numerical & categorical)
+4. Factor Analysis (variable importance)
+5. Neural Networks (pattern recognition, AI)
+6. Data Mining (exploring patterns & relations)
+7. Text Analysis
+8. Time Series (signal trends)
+9. Decision Tree (final decision making)
+10. Conjoint Analysis (survey-based insights) 
+
+⭐ Cluster Analysis
+- Explore data patterns
+- Homogeneous (similar) vs Heterogeneous (different) clusters
+- Business perspective: sales, marketing, insurance, geology 
+
+⭐ Cohort Analysis
+- Subset behavior analysis
+- Divide groups (example Gmail: spam vs important)
+- Market analysis: online/offline purchasing trends 
+
+⭐ Regression Analysis
+- Dependent/independent variable analysis
+- Linear & non-linear regression
+- Identify patterns for past & future predictions 
+
+⭐ Factor Analysis
+- Dimension reduction
+- Identify hidden patterns
+- Summarize variables based on correlation & covariance 
+
+⭐ Neural Networks
+- Input → Hidden → Output
+- Multi-layer networks
+- Applications: image recognition, handwriting, speech, signals, language, object recognition, AI generation, stock prediction, text classification 
+
+⭐ Data Mining
+- Explore relations, patterns, trends
+- Example: KPIs, intelligent alerts 
+
+⭐ Text Analytics / Text Mining
+- Statistics, ML, AI, computer science applications 
+
+⭐ Time Series Analytics
+- Track trends, seasonality, cyclic patterns
+- Forecast business & operational data 
+
+⭐ Decision Trees
+- Flowchart-based analysis
+- Example: Weather → Actions → Outcomes 
+
+⭐ Conjoint Analysis
+- Identify customer needs & response to features
+- Example: Haircare products strategy 
+
+⭐ Data Analysis Process - 1
+1. Info gathering / proper applications
+2. Business needs & requirements
+3. Data collection
+4. Data cleaning
+5. Selection of analysis type
+6. Data interpretation
+7. Data visualization
+- Includes data wrangling & exploratory analysis
+
+⭐ Data Analysis Process - 2
+- Requirements gathering: check old data, find problems & purpose
+- Data collection: online, special sources
+- Data cleaning: remove duplicates, errors, fill missing
+- Exploring: process & clean data
+- Interpretation: summarize & present results
+- Visualization: charts & graphs
