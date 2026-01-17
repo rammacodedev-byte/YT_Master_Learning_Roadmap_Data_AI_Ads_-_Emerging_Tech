@@ -1,0 +1,122 @@
+[
+  {
+    "timestamp": "2026-01-16T02:52:51.757461",
+    "winner": "X",
+    "moves": 7,
+    "player_x_score": 1,
+    "player_o_score": 0,
+    "ties": 0,
+    "mode": "eve",
+    "difficulty": "medium"
+  },
+  {
+    "timestamp": "2026-01-16T02:53:08.172118",
+    "winner": "Tie",
+    "moves": 9,
+    "player_x_score": 1,
+    "player_o_score": 0,
+    "ties": 1,
+    "mode": "pve",
+    "difficulty": "medium"
+  },
+  {
+    "timestamp": "2026-01-16T02:53:38.395838",
+    "winner": "O",
+    "moves": 6,
+    "player_x_score": 0,
+    "player_o_score": 1,
+    "ties": 0,
+    "mode": "pve",
+    "difficulty": "hard"
+  },
+  {
+    "timestamp": "2026-01-16T02:53:48.786893",
+    "winner": "O",
+    "moves": 6,
+    "player_x_score": 0,
+    "player_o_score": 2,
+    "ties": 0,
+    "mode": "pve",
+    "difficulty": "hard"
+  },
+  {
+    "timestamp": "2026-01-16T02:54:04.492719",
+    "winner": "Tie",
+    "moves": 9,
+    "player_x_score": 0,
+    "player_o_score": 2,
+    "ties": 1,
+    "mode": "pve",
+    "difficulty": "hard"
+  },
+  {
+    "timestamp": "2026-01-16T02:54:20.540660",
+    "winner": "Tie",
+    "moves": 9,
+    "player_x_score": 0,
+    "player_o_score": 2,
+    "ties": 2,
+    "mode": "pve",
+    "difficulty": "hard"
+  },
+  {
+    "timestamp": "2026-01-16T02:54:34.884744",
+    "winner": "Tie",
+    "moves": 9,
+    "player_x_score": 0,
+    "player_o_score": 2,
+    "ties": 3,
+    "mode": "pve",
+    "difficulty": "hard"
+  },
+  {
+    "timestamp": "2026-01-16T02:55:35.412675",
+    "winner": "Tie",
+    "moves": 9,
+    "player_x_score": 0,
+    "player_o_score": 2,
+    "ties": 4,
+    "mode": "pve",
+    "difficulty": "hard"
+  },
+  {
+    "timestamp": "2026-01-16T02:55:56.317559",
+    "winner": "Tie",
+    "moves": 9,
+    "player_x_score": 0,
+    "player_o_score": 2,
+    "ties": 5,
+    "mode": "eve",
+    "difficulty": "hard"
+  },
+  {
+    "timestamp": "2026-01-16T02:56:08.720194",
+    "winner": "Tie",
+    "moves": 9,
+    "player_x_score": 0,
+    "player_o_score": 2,
+    "ties": 6,
+    "mode": "eve",
+    "difficulty": "hard"
+  },
+  {
+    "timestamp": "2026-01-16T02:56:24.162075",
+    "winner": "Tie",
+    "moves": 9,
+    "player_x_score": 0,
+    "player_o_score": 2,
+    "ties": 7,
+    "mode": "eve",
+    "difficulty": "hard"
+  },
+  {
+    "timestamp": "2026-01-16T02:56:33.932322",
+    "winner": "X",
+    "moves": 7,
+    "player_x_score": 1,
+    "player_o_score": 2,
+    "ties": 7,
+    "mode": "pvp",
+    "difficulty": null
+  }
+]

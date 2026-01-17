@@ -1,0 +1,94 @@
+🤖 Artificial_Intelligence
+│
+├── 1️⃣ AI Foundations
+│   ├── What is AI?
+│   │     - Machines that mimic human intelligence
+│   │     - Learning, reasoning, perception, decision-making
+│   ├── Types of AI
+│   │     - Narrow AI (Weak AI) → Chatbots, Recommenders
+│   │     - General AI (Strong AI) → Human-level (future)
+│   │     - Super AI → Theoretical
+│   └── AI vs ML vs DL
+│         - AI → Big umbrella
+│         - ML → Learning from data
+│         - DL → Neural networks (deep layers)
+│
+├── 2️⃣ Core AI Concepts
+│   ├── Search Algorithms
+│   │     - BFS, DFS
+│   │     - A* Algorithm
+│   ├── Knowledge Representation
+│   │     - Logic (Propositional, Predicate)
+│   │     - Ontologies
+│   ├── Reasoning
+│   │     - Forward & Backward chaining
+│   │     - Rule-based systems
+│   └── Problem Solving
+│         - State space
+│         - Heuristic functions
+│
+├── 3️⃣ Machine Learning (AI Backbone)
+│   ├── Supervised Learning
+│   │     - Regression
+│   │     - Classification
+│   ├── Unsupervised Learning
+│   │     - Clustering
+│   │     - Dimensionality Reduction
+│   ├── Reinforcement Learning
+│   │     - Agent, Environment
+│   │     - Reward, Policy
+│   └── Model Lifecycle
+│         - Data → Train → Evaluate → Deploy
+│
+├── 4️⃣ Neural Networks & Deep Learning
+│   ├── Neural Network Basics
+│   │     - Neurons, weights, bias
+│   ├── Deep Learning Models
+│   │     - ANN
+│   │     - CNN (Vision)
+│   │     - RNN / LSTM (Sequence)
+│   │     - Transformers (Modern AI)
+│   ├── Optimization
+│   │     - Gradient Descent
+│   │     - Backpropagation
+│   └── Frameworks
+│         - TensorFlow
+│         - PyTorch
+│
+├── 5️⃣ Specialized AI Domains
+│   ├── Computer Vision
+│   │     - Image classification
+│   │     - Object detection
+│   ├── Natural Language Processing (NLP)
+│   │     - Text classification
+│   │     - Chatbots
+│   │     - LLMs
+│   ├── Robotics & Autonomous Systems
+│   │     - Self-driving cars
+│   │     - Simulations
+│   └── Generative AI
+│         - Text, Image, Video generation
+│
+├── 6️⃣ AI in Industry
+│   ├── Healthcare
+│   ├── Finance
+│   ├── Marketing & Ads
+│   ├── E-Commerce
+│   └── Enterprise AI Systems
+│
+├── 7️⃣ AI Ethics & Responsible AI
+│   ├── Bias & Fairness
+│   ├── Explainable AI (XAI)
+│   ├── Privacy & Security
+│   └── Human-in-the-loop
+│
+└── 8️⃣ AI Deployment & MLOps
+    ├── Model Deployment
+    │     - FastAPI / Flask
+    ├── Monitoring
+    │     - Drift detection
+    ├── Scaling
+    │     - Docker
+    │     - Cloud (AWS / GCP)
+    └── CI/CD for AI
+          - GitHub Actions

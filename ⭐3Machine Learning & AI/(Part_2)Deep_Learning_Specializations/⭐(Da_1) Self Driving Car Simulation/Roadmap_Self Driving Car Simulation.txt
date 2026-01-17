@@ -1,0 +1,176 @@
+🚗🤖 SELF DRIVING CAR SIMULATION — COMPLETE ROADMAP
+=================================================
+
+PHASE 0️⃣ : PREREQUISITES
+------------------------
+✔ Python (3.8 recommended)
+✔ Conda / Miniconda
+✔ NumPy, Pandas, Matplotlib
+✔ OpenCV (cv2)
+✔ Basic Machine Learning
+✔ Basic CNN understanding
+
+-------------------------------------------------
+
+PHASE 1️⃣ : ENVIRONMENT SETUP
+----------------------------
+✔ Create Conda environment
+✔ Install TensorFlow (CPU / GPU)
+✔ Install MoviePy, FFmpeg
+✔ Verify TensorFlow & GPU
+✔ Export environment.yml
+
+Tools:
+- Conda
+- TensorFlow
+- CUDA (optional)
+- Udacity Simulator
+
+-------------------------------------------------
+
+PHASE 2️⃣ : PROJECT STRUCTURE
+-----------------------------
+Self-Driving-Car/
+│
+├── model.py          → Model training
+├── drive.py          → Autonomous driving
+├── utils.py          → Preprocessing & augmentation
+├── model.h5          → Trained weights
+├── driving_log.csv   → Steering data
+├── IMG/              → Camera images
+├── environment.yml
+└── README.md
+
+-------------------------------------------------
+
+PHASE 3️⃣ : DATA UNDERSTANDING
+------------------------------
+✔ driving_log.csv (no headers)
+✔ Center / Left / Right images
+✔ Steering angle
+✔ Speed, throttle, brake
+
+Fix:
+- Add column names manually
+- Remove bad / empty rows
+
+-------------------------------------------------
+
+PHASE 4️⃣ : IMAGE PREPROCESSING
+-------------------------------
+✔ Crop irrelevant regions
+✔ Resize (e.g. 200x66)
+✔ RGB → YUV
+✔ Normalize pixels
+✔ Gaussian blur
+
+Implemented in:
+- utils.py
+
+-------------------------------------------------
+
+PHASE 5️⃣ : DATA AUGMENTATION
+-----------------------------
+✔ Random flip
+✔ Random brightness
+✔ Random shift
+✔ Left/Right camera correction
+✔ Steering angle adjustment
+
+Goal:
+- Reduce overfitting
+- Balance steering distribution
+
+-------------------------------------------------
+
+PHASE 6️⃣ : MODEL ARCHITECTURE
+------------------------------
+✔ NVIDIA End-to-End CNN
+✔ Convolution layers
+✔ Batch Normalization
+✔ Dropout
+✔ Fully Connected layers
+✔ Single output (steering angle)
+
+Loss:
+- Mean Squared Error (MSE)
+
+Optimizer:
+- Adam
+
+-------------------------------------------------
+
+PHASE 7️⃣ : TRAINING PIPELINE
+-----------------------------
+✔ Train / Validation split
+✔ Generator-based loading
+✔ Batch training
+✔ Epoch monitoring
+✔ Save best model
+
+Output:
+- model.h5
+
+-------------------------------------------------
+
+PHASE 8️⃣ : DRIVING SIMULATION
+------------------------------
+✔ Load trained model
+✔ Real-time image feed
+✔ Predict steering angle
+✔ Control car in simulator
+
+Command:
+python drive.py model.h5
+
+-------------------------------------------------
+
+PHASE 9️⃣ : DEBUGGING & FIXES
+-----------------------------
+✔ CSV header fix
+✔ NumPy boolean indexing fix
+✔ Steering bias correction
+✔ Overfitting control
+✔ Smooth steering output
+
+-------------------------------------------------
+
+PHASE 🔟 : OPTIMIZATION
+----------------------
+✔ Data balancing
+✔ Learning rate tuning
+✔ More augmentation
+✔ Dropout tuning
+✔ Batch size experiments
+
+-------------------------------------------------
+
+PHASE 1️⃣1️⃣ : ADVANCED EXTENSIONS
+---------------------------------
+✔ Lane detection (OpenCV)
+✔ Speed control model
+✔ Reinforcement Learning
+✔ ROS integration
+✔ Real-world dataset testing
+
+-------------------------------------------------
+
+PHASE 1️⃣2️⃣ : DEPLOYMENT & PORTFOLIO
+-----------------------------------
+✔ Clean GitHub repo
+✔ Professional README
+✔ Environment files
+✔ Demo video
+✔ Resume project link
+
+-------------------------------------------------
+
+🎯 FINAL GOAL
+-------------
+✅ End-to-End Autonomous Driving
+✅ Stable steering
+✅ No lane crashes
+✅ Industry-ready ML project
+
+=================================================
+🚀 READY FOR REAL-WORLD AUTONOMOUS AI SYSTEMS

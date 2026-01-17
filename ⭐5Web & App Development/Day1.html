@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Data Science Journey</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #7c3aed;
+            --dark-color: #1e293b;
+            --light-color: #f8fafc;
+            --success-color: #10b981;
+            --warning-color: #f59e0b;
+            --timeline-color: #e2e8f0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f1f5f9;
+            color: var(--dark-color);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            border-radius: 15px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .journey-container {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        .timeline {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 6px;
+            height: 100%;
+            background-color: var(--timeline-color);
+            border-radius: 3px;
+        }
+
+        .phase {
+            display: flex;
+            margin-bottom: 60px;
+            position: relative;
+            width: 100%;
+        }
+
+        .phase:nth-child(odd) {
+            justify-content: flex-start;
+        }
+
+        .phase:nth-child(even) {
+            justify-content: flex-end;
+        }
+
+        .phase-content {
+            width: 45%;
+            background-color: white;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            position: relative;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .phase-content:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .phase:nth-child(odd) .phase-content:after {
+            content: '';
+            position: absolute;
+            right: -15px;
+            top: 30px;
+            border-left: 15px solid white;
+            border-top: 15px solid transparent;
+            border-bottom: 15px solid transparent;
+        }
+
+        .phase:nth-child(even) .phase-content:after {
+            content: '';
+            position: absolute;
+            left: -15px;
+            top: 30px;
+            border-right: 15px solid white;
+            border-top: 15px solid transparent;
+            border-bottom: 15px solid transparent;
+        }
+
+        .phase-marker {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: white;
+            border: 6px solid var(--primary-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-color);
+            font-size: 1.2rem;
+            z-index: 10;
+            box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
+        }
+
+        .phase-title {
+            font-size: 1.6rem;
+            margin-bottom: 10px;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .phase-period {
+            color: var(--secondary-color);
+            font-weight: 600;
+            margin-bottom: 15px;
+            display: block;
+            font-size: 1.1rem;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        .skill-tag {
+            background-color: #e0f2fe;
+            color: #0369a1;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .html-skill {
+            background-color: #fef3c7;
+            color: #92400e;
+        }
+
+        .css-skill {
+            background-color: #dbeafe;
+            color: #1e40af;
+        }
+
+        .js-skill {
+            background-color: #fef3c7;
+            color: #92400e;
+        }
+
+        .python-skill {
+            background-color: #f0f9ff;
+            color: #0c4a6e;
+        }
+
+        .react-skill {
+            background-color: #e0f2fe;
+            color: #0c4a6e;
+        }
+
+        .node-skill {
+            background-color: #f0fdf4;
+            color: #166534;
+        }
+
+        .ds-skill {
+            background-color: #fae8ff;
+            color: #86198f;
+        }
+
+        .ml-skill {
+            background-color: #ffedd5;
+            color: #9a3412;
+        }
+
+        .project-showcase {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #f8fafc;
+            border-radius: 10px;
+            border-left: 4px solid var(--primary-color);
+        }
+
+        .project-title {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: var(--dark-color);
+        }
+
+        .code-block {
+            background-color: #1e293b;
+            color: #e2e8f0;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            font-family: 'Courier New', monospace;
+            overflow-x: auto;
+            font-size: 0.9rem;
+        }
+
+        .current-focus {
+            background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
+            padding: 40px;
+            border-radius: 15px;
+            margin: 40px 0;
+            text-align: center;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .focus-title {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+
+        .dashboard-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .dashboard-card {
+            background-color: white;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease;
+        }
+
+        .dashboard-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-title {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: #64748b;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            margin-top: 50px;
+            color: #64748b;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        @media (max-width: 992px) {
+            .phase-content {
+                width: 90%;
+            }
+
+            .phase:nth-child(odd) .phase-content:after,
+            .phase:nth-child(even) .phase-content:after {
+                display: none;
+            }
+
+            .phase:nth-child(odd),
+            .phase:nth-child(even) {
+                justify-content: center;
+            }
+
+            .timeline {
+                display: none;
+            }
+
+            .phase-marker {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>My Data Science Journey</h1>
+            <p class="subtitle">From HTML/CSS/JS beginner to advanced data scientist building full-stack applications.
+                This timeline chronicles my evolution through frontend, backend, and data science technologies.</p>
+        </header>
+
+        <div class="journey-container">
+            <div class="timeline"></div>
+
+            <!-- Phase 1: The Beginning -->
+            <div class="phase">
+                <div class="phase-marker">
+                    <i class="fas fa-code"></i>
+                </div>
+                <div class="phase-content">
+                    <h2 class="phase-title"><i class="fas fa-seedling"></i> The Beginning: Web Development Basics</h2>
+                    <span class="phase-period">2015-2016</span>
+                    <p>My journey started with the fundamentals of web development. I built my first website using only
+                        HTML and CSS, learning how to structure content and style it to look presentable.</p>
+
+                    <div class="skills">
+                        <span class="skill-tag html-skill">HTML5</span>
+                        <span class="skill-tag css-skill">CSS3</span>
+                        <span class="skill-tag">Responsive Design</span>
+                    </div>
+
+                    <div class="project-showcase">
+                        <h3 class="project-title">First Project: Personal Portfolio</h3>
+                        <p>A simple static website to showcase my early projects. It had a navigation bar, image
+                            gallery, and contact form.</p>
+                        <div class="code-block">
+                            /* My first CSS stylesheet */
+                            body {
+                            font-family: Arial, sans-serif;
+                            margin: 0;
+                            padding: 0;
+                            }
+
+                            .header {
+                            background-color: #4CAF50;
+                            color: white;
+                            text-align: center;
+                            padding: 20px;
+                            }
+
+                            .navbar {
+                            overflow: hidden;
+                            background-color: #333;
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Phase 2: Adding Interactivity -->
+            <div class="phase">
+                <div class="phase-marker">
+                    <i class="fab fa-js"></i>
+                </div>
+                <div class="phase-content">
+                    <h2 class="phase-title"><i class="fas fa-bolt"></i> Adding Interactivity with JavaScript</h2>
+                    <span class="phase-period">2017-2018</span>
+                    <p>I discovered JavaScript and how it could bring websites to life. From form validation to dynamic
+                        content updates, I learned how to make web pages interactive and responsive to user actions.</p>
+
+                    <div class="skills">
+                        <span class="skill-tag js-skill">JavaScript</span>
+                        <span class="skill-tag">DOM Manipulation</span>
+                        <span class="skill-tag">jQuery</span>
+                        <span class="skill-tag">AJAX</span>
+                    </div>
+
+                    <div class="project-showcase">
+                        <h3 class="project-title">Interactive To-Do List App</h3>
+                        <p>A browser-based task manager with local storage, allowing users to add, edit, delete, and
+                            mark tasks as complete.</p>
+                        <div class="code-block">
+                            // My first JavaScript function
+                            function addTask() {
+                            const taskInput = document.getElementById("taskInput");
+                            const taskList = document.getElementById("taskList");
+
+                            if (taskInput.value !== "") {
+                            const li = document.createElement("li");
+                            li.textContent = taskInput.value;
+                            taskList.appendChild(li);
+                            taskInput.value = "";
+
+                            // Save to localStorage
+                            saveTasks();
+                            }
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Phase 3: Backend Development -->
+            <div class="phase">
+                <div class="phase-marker">
+                    <i class="fas fa-server"></i>
+                </div>
+                <div class="phase-content">
+                    <h2 class="phase-title"><i class="fas fa-cogs"></i> Backend Development & Databases</h2>
+                    <span class="phase-period">2019-2020</span>
+                    <p>I expanded my skills to the server-side, learning Node.js and Python for backend development.
+                        This allowed me to build full-stack applications with user authentication, databases, and APIs.
+                    </p>
+
+                    <div class="skills">
+                        <span class="skill-tag node-skill">Node.js</span>
+                        <span class="skill-tag python-skill">Python</span>
+                        <span class="skill-tag">Express.js</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">REST APIs</span>
+                    </div>
+
+                    <div class="project-showcase">
+                        <h3 class="project-title">E-commerce Platform</h3>
+                        <p>A full-stack web application with user authentication, product catalog, shopping cart, and
+                            payment integration.</p>
+                        <div class="code-block">
+                            # My first REST API endpoint with Python/Flask
+                            @app.route('/api/products', methods=['GET'])
+                            def get_products():
+                            products = db.products.find()
+                            product_list = []
+                            for product in products:
+                            product_list.append({
+                            'id': str(product['_id']),
+                            'name': product['name'],
+                            'price': product['price'],
+                            'category': product['category']
+                            })
+                            return jsonify(product_list)
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Phase 4: Data Science Discovery -->
+            <div class="phase">
+                <div class="phase-marker">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="phase-content">
+                    <h2 class="phase-title"><i class="fas fa-database"></i> Discovering Data Science</h2>
+                    <span class="phase-period">2020-2021</span>
+                    <p>I discovered the world of data science and realized I could combine my programming skills with
+                        statistics and analytics. I began learning Python data libraries and statistical concepts.</p>
+
+                    <div class="skills">
+                        <span class="skill-tag python-skill">Python</span>
+                        <span class="skill-tag ds-skill">Pandas</span>
+                        <span class="skill-tag ds-skill">NumPy</span>
+                        <span class="skill-tag">Data Visualization</span>
+                        <span class="skill-tag">Statistics</span>
+                        <span class="skill-tag">Jupyter Notebooks</span>
+                    </div>
+
+                    <div class="project-showcase">
+                        <h3 class="project-title">Sales Data Analysis Dashboard</h3>
+                        <p>An analysis of retail sales data to identify trends, top-performing products, and customer
+                            buying patterns.</p>
+                        <div class="code-block">
+                            # My first data analysis with Pandas
+                            import pandas as pd
+                            import matplotlib.pyplot as plt
+
+                            # Load sales data
+                            sales_data = pd.read_csv('sales.csv')
+
+                            # Calculate monthly revenue
+                            monthly_revenue = sales_data.groupby('month')['revenue'].sum()
+
+                            # Create visualization
+                            plt.figure(figsize=(10, 6))
+                            monthly_revenue.plot(kind='bar', color='skyblue')
+                            plt.title('Monthly Revenue Analysis')
+                            plt.xlabel('Month')
+                            plt.ylabel('Revenue ($)')
+                            plt.tight_layout()
+                            plt.show()
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Phase 5: Advanced Data Science -->
+            <div class="phase">
+                <div class="phase-marker">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <div class="phase-content">
+                    <h2 class="phase-title"><i class="fas fa-robot"></i> Advanced Data Science & Machine Learning</h2>
+                    <span class="phase-period">2021-2022</span>
+                    <p>I delved into machine learning, building predictive models and learning algorithms. This phase
+                        combined my backend skills with data science to create production-ready ML applications.</p>
+
+                    <div class="skills">
+                        <span class="skill-tag ml-skill">Scikit-learn</span>
+                        <span class="skill-tag ml-skill">TensorFlow</span>
+                        <span class="skill-tag">Machine Learning</span>
+                        <span class="skill-tag">Deep Learning</span>
+                        <span class="skill-tag">Model Deployment</span>
+                        <span class="skill-tag">A/B Testing</span>
+                    </div>
+
+                    <div class="project-showcase">
+                        <h3 class="project-title">Customer Churn Prediction System</h3>
+                        <p>A machine learning model to predict which customers are likely to churn, with a web interface
+                            for business users to input data and get predictions.</p>
+                        <div class="code-block">
+                            # Training my first ML model
+                            from sklearn.ensemble import RandomForestClassifier
+                            from sklearn.model_selection import train_test_split
+
+                            # Prepare data
+                            X = customer_data.drop('churned', axis=1)
+                            y = customer_data['churned']
+
+                            # Split data
+                            X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
+
+                            # Train model
+                            model = RandomForestClassifier(n_estimators=100, random_state=42)
+                            model.fit(X_train, y_train)
+
+                            # Make predictions
+                            predictions = model.predict(X_test)
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Phase 6: Full-Stack Data Science -->
+            <div class="phase">
+                <div class="phase-marker">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <div class="phase-content">
+                    <h2 class="phase-title"><i class="fas fa-project-diagram"></i> Full-Stack Data Science Applications
+                    </h2>
+                    <span class="phase-period">2022-Present</span>
+                    <p>Now I combine all my skills to build complete data science applications. From frontend interfaces
+                        to backend APIs and ML models deployed in production, I create end-to-end solutions.</p>
+
+                    <div class="skills">
+                        <span class="skill-tag react-skill">React</span>
+                        <span class="skill-tag">FastAPI</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Cloud Deployment</span>
+                        <span class="skill-tag">MLOps</span>
+                        <span class="skill-tag">Data Pipelines</span>
+                    </div>
+
+                    <div class="project-showcase">
+                        <h3 class="project-title">Real-Time Analytics Dashboard</h3>
+                        <p>A full-stack application with React frontend, FastAPI backend, and real-time data processing
+                            pipeline that visualizes streaming data and provides predictive insights.</p>
+                        <div class="code-block">
+                            // Full-stack data science: React component for data visualization
+                            import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip } from 'recharts';
+
+                            const DataVisualization = ({ predictions }) => {
+                            return (
+                            <div className="chart-container">
+                                <h3>Real-Time Predictions</h3>
+                                <LineChart width={600} height={300} data={predictions}>
+                                    <CartesianGrid strokeDasharray="3 3" />
+                                    <XAxis dataKey="timestamp" />
+                                    <YAxis label={{ value: 'Prediction' , angle: -90 }} />
+                                    <Tooltip />
+                                    <Line type="monotone" dataKey="value" stroke="#8884d8" />
+                                </LineChart>
+                            </div>
+                            );
+                            };
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="current-focus">
+            <h2 class="focus-title">My Current Focus: Building Intelligent Applications</h2>
+            <p>Today, I focus on creating applications that leverage data science to solve real-world problems. I
+                combine my frontend, backend, and data science skills to build end-to-end solutions that are both
+                functional and intelligent.</p>
+
+            <div class="dashboard-container">
+                <div class="dashboard-card">
+                    <h3 class="card-title"><i class="fas fa-code"></i> Tech Stack</h3>
+                    <ul>
+                        <li>Frontend: React, TypeScript, D3.js</li>
+                        <li>Backend: FastAPI, Node.js, PostgreSQL</li>
+                        <li>Data Science: Python, Scikit-learn, TensorFlow</li>
+                        <li>DevOps: Docker, AWS, GitHub Actions</li>
+                    </ul>
+                </div>
+
+                <div class="dashboard-card">
+                    <h3 class="card-title"><i class="fas fa-rocket"></i> Current Projects</h3>
+                    <ul>
+                        <li>Healthcare analytics platform</li>
+                        <li>Real-time fraud detection system</li>
+                        <li>Automated report generation tool</li>
+                        <li>ML model monitoring dashboard</li>
+                    </ul>
+                </div>
+
+                <div class="dashboard-card">
+                    <h3 class="card-title"><i class="fas fa-bullseye"></i> Learning Goals</h3>
+                    <ul>
+                        <li>Deep learning for NLP</li>
+                        <li>Scalable data architecture</li>
+                        <li>Real-time streaming analytics</li>
+                        <li>Advanced visualization techniques</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-value">8+</div>
+                    <div class="stat-label">Years Learning</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">50+</div>
+                    <div class="stat-label">Projects Built</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">12+</div>
+                    <div class="stat-label">Technologies</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">3</div>
+                    <div class="stat-label">Roles Combined</div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>My journey from HTML beginner to advanced data scientist continues every day. The key lesson: every skill
+                builds upon the previous ones, creating a unique and powerful combination.</p>
+            <p style="margin-top: 15px;">© 2023 | Built with HTML, CSS, and JavaScript to tell my story</p>
+        </footer>
+    </div>
+
+    <script>
+        // Add some interactivity to the timeline
+        document.addEventListener('DOMContentLoaded', function () {
+            const phaseContents = document.querySelectorAll('.phase-content');
+
+            // Add click effect to phase cards
+            phaseContents.forEach(content => {
+                content.addEventListener('click', function () {
+                    this.style.transform = 'scale(0.99)';
+                    setTimeout(() => {
+                        this.style.transform = '';
+                    }, 150);
+                });
+            });
+
+            // Add scroll animation
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+
+            // Set initial state for animation
+            phaseContents.forEach(content => {
+                content.style.opacity = '0';
+                content.style.transform = 'translateY(20px)';
+                content.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                observer.observe(content);
+            });
+
+            // Add a simple skills counter
+            const skillTags = document.querySelectorAll('.skill-tag');
+            console.log(`Total skills showcased: ${skillTags.length}`);
+        });
+    </script>
+</body>
+
+</html>
